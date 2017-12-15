@@ -1,0 +1,38 @@
+{
+    "name": "myziyue/php-amqp",
+    "description": "MyZiyuye AMQP library",
+    "keywords": [
+        "amqp",
+        "php",
+        "RabbitMQ",
+        "myziyue"
+    ],
+    "homepage": "http://www.myziyue.com/",
+    "type": "library",
+    "license": "Apache License",
+    "authors": [
+        {
+            "name": "Bi Zhiming",
+            "email": "evan2884@gmail.com",
+            "homepage": "http://www.myziyue.com/",
+            "role": "Founder and project lead"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/myziyue/php-amqp/issues?state=open",
+        "wiki": "http://www.myziyue.com/wiki/",
+        "source": "https://github.com/myziyue/php-amqp"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "ext-amqp": "*"
+    },
+    "autoload": {
+        "psr-4": {"myziyue\\amqp\\": ""}
+    },
+    "extra": {
+        "branch-alias": {
+            "master": "*"
+        }
+    }
+}

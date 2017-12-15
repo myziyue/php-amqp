@@ -19,12 +19,7 @@ $zyAmqp->setQueueName('queue_demo');
 $zyAmqp->create();
 
 $message = json_encode(array('Hello World3!', 'php3', 'c++3:'));
-$routingkey = 'key';
-for ($i = 0; $i < 100; $i++) {
-    if ($routingkey == 'key2') {
-        $routingkey = 'key';
-    } else {
-        $routingkey = 'key2';
-    }
-    $zyAmqp->push($message, $routingkey);
-}
+$routingkey = 'key2';
+
+$zyAmqp->push($message, $routingkey);
+

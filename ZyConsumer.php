@@ -50,12 +50,6 @@ class ZyConsumer extends Base
 
     public function pop()
     {
-        $message = static::$queue->get(AMQP_AUTOACK);
-        return json_decode($message->getBody(), true);
-    }
-
-    public function popAll()
-    {
         $rs = [];
         while ($message = static::$queue->get(AMQP_AUTOACK)) {
             $rs[] = json_decode($message->getBody(), true);

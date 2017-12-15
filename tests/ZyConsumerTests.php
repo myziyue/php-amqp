@@ -20,7 +20,7 @@ $zyAmqp->setExchangeName('exchange_demo');
 $zyAmqp->setQueueName('queue_demo');
 $zyAmqp->create($bindingkey);
 
-while($message = $zyAmqp->popAll()){
+while($message = $zyAmqp->pop()){
     var_dump($message);
 }
 
